@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZapRecap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              whatsapp: {
+                DEFAULT: '#25D366',
+                dark: '#075E54',
+              },
+              wrapped: {
+                bg: '#121212',
+                card: '#1E1E1E',
+                primary: '#1DB954',
+                purple: '#8C4BF8',
+                pink: '#FF0055',
+                yellow: '#F9D00F',
+              }
+            },
+            animation: {
+              'spin-slow': 'spin 3s linear infinite',
+              'slide-up': 'slideUp 0.5s ease-out forwards',
+              'fade-in': 'fadeIn 0.5s ease-out forwards',
+            },
+            keyframes: {
+              slideUp: {
+                '0%': { transform: 'translateY(20px)', opacity: '0' },
+                '100%': { transform: 'translateY(0)', opacity: '1' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "recharts": "https://esm.sh/recharts@^3.5.1",
+    "jszip": "https://esm.sh/jszip@3.10.1",
+    "@google/genai": "https://esm.sh/@google/genai",
+    "qrcode": "https://esm.sh/qrcode@1.5.3",
+    "html2canvas": "https://esm.sh/html2canvas@1.4.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#121212] text-white overflow-x-hidden font-sans antialiased">
+    <div id="root"></div>
+  </body>
+</html>

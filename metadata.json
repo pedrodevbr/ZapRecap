@@ -1,0 +1,5 @@
+{
+  "name": "ZapRecap",
+  "description": "A Spotify Wrapped-style retrospective for WhatsApp chats using Python FastAPI backend and React frontend.",
+  "requestFramePermissions": []
+}
